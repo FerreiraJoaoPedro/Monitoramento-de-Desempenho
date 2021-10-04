@@ -16,7 +16,7 @@ const calcular = document.getElementById('calcular');
 			const tempoHoras = (parseFloat(horas) + parseFloat(minutos / 60) + parseFloat(segundos / 360)).toFixed(2);
 			const tempoMinutos = (parseFloat(horas * 60) + parseFloat(minutos) + parseFloat(segundos / 60)).toFixed(2);
 			const velocidadeMedia = (distancia / tempoHoras).toFixed(2);
-			const pace = (distancia / tempoMinutos).toFixed(2);
+			const pace = (60 / velocidadeMedia).toFixed(2);
 			const gastoCalorico = (velocidadeMedia * peso * 0.0175 * tempoMinutos).toFixed(2);
 			
 			resultado.textContent = 'Olá '+nome+'! Você percorreu '+distancia+' km em '+horas+' h, '+minutos+' min e '+segundos+' s. Isso quer dizer que a sua velocidade média foi de '+velocidadeMedia+' km/h, o que o corresponde a um pace de '+pace+' min/km. Com '+peso+' kg, você gastou cerca de '+gastoCalorico+' cal';
