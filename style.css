@@ -1,0 +1,44 @@
+.main{
+	background-image: url("wall.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.formulario{
+	width: 50%;
+	padding: 10px;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 25px;
+	border-style: solid;
+	align-self: center;
+	justify-self: center;
+}
+
+.centering{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+}
+
+.input{
+	background-color: #abc4eb;
+}
+
+.linha{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+}

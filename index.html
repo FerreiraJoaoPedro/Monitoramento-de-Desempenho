@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<title>MONITORAMENTO DE CORRIDAS</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="main">
+<div class="form-group formulario">
+
+      <div class="centering">
+      <h2>Monitoramento de corridas</h2>
+      </div>
+
+	<div class="row">
+
+        <div class="col-lg-12">
+        <label for="nome">Digite o seu nome:</label>
+        <input type="text" id='nome' class="form-control input" required placeholder="Ex: Pedro">
+        </div>
+
+     </div><br>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+        <label for="peso">Digite o seu peso(kg):</label>
+        <input type="number" id='peso' class="form-control input" required placeholder="Ex: 70">
+        </div>
+
+     </div><br>
+
+     <div class="row">
+
+      <div class="col-lg-12">
+        <label for="distancia">Digite a distância percorrida(km):</label>
+        <input type="number" id='distancia' class="form-control input" required placeholder="Ex: 20">
+        </div>
+
+     </div><br>
+
+     <div class="row">
+
+      <div class="col-lg-12">
+        <label for="tempo">Digite o tempo de treino:</label>
+        <div style="margin-bottom: 25px;" class="linha">
+        <input value="0" style="margin-right: 10px;" type="number" id='horas' class="form-control input col-lg-3" required placeholder="Horas">
+        <input value="0" style="margin-right: 10px;" type="number" id='minutos' class="form-control input col-lg-4" required placeholder="Minutos">
+        <input value="0" style="margin-right: 10px;" type="number" id='segundos' class="form-control input col-lg-4" required placeholder="Segundos">
+        </div>
+
+     </div><br>
+
+        <div style="margin-bottom: 25px;" class="centering col-lg-12" id='resultado'>
+
+	<div class="centering">
+
+        <button type="submit" class="btn btn-outline-success botao" id='calcular'>Calcular</button>
+    	</div>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
